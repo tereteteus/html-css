@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <!--Escreva as imagens sempre EM ORDEM! Caso você inverta a ordem ou retire ela da posição, o site não irá corresponder as imagens ao tamanhos esperados.-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzir áudio</h1>
+    <!--Tipos de áudio compatíveis: MP3 WAV OGG-->
+    <!--Para melhor compatibilidade, você também pode montar a plataforma de audio da seguinte forma-->
+    <audio preload="metadata" controls>
+        <!--Controls > mostra o controle | loop > reinicia o audio quando chega no fim | autoplay > inicia automaticamente o audio assim que abre-->
+        <!--Existem alguns tipos de PRELOAD nos áudios, como o AUTO, que fará com que a página carregue apenas quando o audio for completamente carregado, o METADATA, que carrega algumas informações úteis sobre o áudio e só carrega o áudio em si depois que for apertado o play, e o NONE, que não irá carregar nadica de nada-->
+        <source src="midia/bedtime.mp3" type="audio/mpeg">
+        <source src="midia/bedtime.ogg" type="audio/ogg">
+        <source src="midia/bedtime.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/bedtime.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+    <!--Lembrando que a ordem dos audios é importante também, pois ele irá ler de cima para baixo e testar qual é compatível com o navegador-->
+</body>
+</html>

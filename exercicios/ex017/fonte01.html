@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style> 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            MEDIDAS ABSOLUTAS
+            cm, mm, in, px, pt, pc
+            
+            MEDIDAS RELATIVAS
+            em, er, rem, vw, %
+
+            16px geralmente = 1 em
+            PX e EM são as mais recomendadas!!
+            */
+            font-size: 1em;
+            font-weight: lighter;
+            /*
+            As variações de peso de fonte são
+            Lighter Normal Bold Bolder
+            Também pode ter variações numéricas
+            100 ~ 900
+            */
+            font-style: italic;
+            /*
+            Estilo de fonte pode ser
+            Normal oblico italico
+            */
+            text-decoration: overline;
+            /*
+            Decoração de texto poder ser usada para
+            underline tracejado, etc
+            */
+            
+            /*
+            Shorthand Font
+            Basicamente um resumo/ajuda pra organização dos estilos da fonte, organizado na seguinte ordem
+            font-style -> font-weight -> font-size -> font-family
+            */
+        
+        }
+        
+        h1, h2 {
+            font: italic bolder 3em Arial, Helvetica;
+            /*Isso aqui é um Shorthand*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid doloremque provident similique vel in magni accusantium sit repellendus doloribus officia unde rem, quos earum sequi sint soluta atque ducimus hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi ad odit, iste recusandae sunt excepturi voluptatem deleniti adipisci illum accusantium facilis nemo fugit quis molestias error architecto exercitationem cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius iste obcaecati, pariatur nulla nobis sint ut iusto laudantium repudiandae quibusdam blanditiis consequuntur magnam deserunt quis cumque necessitatibus repellat asperiores? Mollitia!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate architecto rerum maxime? Animi beatae numquam soluta dicta! Quos ab nemo exercitationem obcaecati autem eligendi natus delectus harum, optio fugiat!</p>
+</body>
+</html>

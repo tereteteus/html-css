@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+    Em HTML, tudo que e ID, em CSS é #
+    Em HTML, tudo que é CLASSE, em CSS é .
+
+    Um ID só pode ser colocado uma única vez dentro de um HTML
+*/
+
+body {
+    background-color: rgb(126, 176, 126);
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(96, 130, 96);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: white;
+}
+
+h2 {
+    color: rgb(49, 66, 49);
+}
+
+.basico {
+    color: bisque;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avançado {
+    color: red;
+}
+
+.destaque {
+    background-color: beige;
+}

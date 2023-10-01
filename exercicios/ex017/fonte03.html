@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas: OTF e TTF</title>
+    <style>
+        @font-face {
+            font-family: 'coolvetica' ;
+            src: url(fontes/coolvetica/coolvetica\ rg.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embeded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2 {
+            font-family: 'coolvetica', sans-serif;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid omnis ut aperiam! Est, labore nulla cum, in at ea sit veritatis ipsam dolorum deleniti blanditiis hic error repellat ipsa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro provident sed magni natus ducimus accusamus officiis doloremque molestias, vel voluptates illum qui dicta consectetur, sit maiores quam facere ipsa maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto, exercitationem recusandae reprehenderit eaque dicta aspernatur quasi laboriosam. Facere sit at sapiente fugit qui maiores expedita! Ipsa cupiditate consequatur sequi?</p>
+</body>
+</html>

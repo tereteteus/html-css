@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <!--Os tipos comuns de videos usados em websites são MP4, MKV, OGV, WEBM-->
+</head>
+<body>
+    <h1>Inserindo vídeos hsoepdados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="500" controls>
+        <!--Se quiser colocar alguma imagem de capa no seu video, use a tag POSTER-->
+        <source src="midias/Video.mkv" type="video/mkv">
+        <source src="midias/Video.mp4" type="video/mp4">
+        <source src="midias/Video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <!--Videos hospedados localmente consomem mais a banda de dados, custeando mais a hospedagem do site e da memória-->
+    </video>
+    <h1>Inserindo vídeos externos (servidores de vídeo)</h1>
+    <p>Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7MJBx0SvLrk?si=s1h_mZJ7keWoBgnV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/785051437?h=32b6f050da" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
