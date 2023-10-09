@@ -73,3 +73,21 @@ p.poema-fundo {
     color: white;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-family: var(--fonte3);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+} 
+
+a:hover {
+    text-decoration: underline;
+}
