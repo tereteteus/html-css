@@ -2,9 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-body {
-    background-color: white;
+:root {
+    --fonte1: 'Righteous', cursive;
+    --fonte2: 'Shadows Into Light', cursive;
+    --fonte3: Arial, Helvetica, sans-serif;
+}
+
+* {
     margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100hv;
+    background-color: white;
 }
 
 /*TÍTULO*/
@@ -12,46 +23,53 @@ header {
     background-color: rgb(98, 87, 56);
     color: white;
     text-align: center;
-    padding: 10px;
 }
 
-header h1 {
-    font-family: 'Righteous', cursive;
+header > h1 {
+    font-family: var(--fonte1);
     font-size: 3em;
+    padding-top: 50px;
+    font-size: 10vw;
 }
 
 header h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte3);
     font-size: 1.5em;
     font-weight: lighter;
+    padding-bottom: 50px;
 }
 
 /*CONTEÚDO*/
 section.texto {
     background-color: rgb(255, 239, 214);
-    padding: 100px 30px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 60px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
 }
 
 section.imagem-texto1 {
     background: black url('imagens/background001.jpg') center center no-repeat fixed;
     background-size: cover;
+    padding: 30px;
 }
 
 section.imagem-texto2 {
     background: black url('imagens/background002.jpg') center center no-repeat fixed;
     background-size: cover;
+    padding: 30px;
 }
 
-article.poema-fundo {
-    max-width: 400px;
-    background-size: contain;
+p.poema-fundo {
+    display: inline-block;
+    width: 50vw;
     background-color: rgba(0, 0, 0, 0.423);
-    padding: 10px;
-    margin: 20px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
     color: white;
 }
 
