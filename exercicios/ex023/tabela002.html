@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            border: 1px solid black;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: lightgray;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+            /*Esse nth-child() serve pra selecionar uma certa especificação de linhas ou colunas seja pela quantidade (1n, 2n, 3n...) ou pelo sua características (even, odd...)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+        - TABLE
+            - CAPTION (Legenda da Tabela)
+            - THEAD
+                TR, TD, TH
+            - TBODY
+                TR, TD, TH
+            - TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>SODOMA</td>
+                <td class="num">83 544 123</td>
+            </tr>
+            <tr>
+                <td>GOMORRA</td>
+                <td class="num">75 345 323</td>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>SODOMA</td>
+                <td class="num">83 544 123</td>
+            </tr>
+            <tr>
+                <td>GOMORRA</td>
+                <td class="num">75 345 323</td>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>SODOMA</td>
+                <td class="num">83 544 123</td>
+            </tr>
+            <tr>
+                <td>GOMORRA</td>
+                <td class="num">75 345 323</td>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>SODOMA</td>
+                <td class="num">83 544 123</td>
+            </tr>
+            <tr>
+                <td>GOMORRA</td>
+                <td class="num">75 345 323</td>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>SODOMA</td>
+                <td class="num">83 544 123</td>
+            </tr>
+            <tr>
+                <td>GOMORRA</td>
+                <td class="num">75 345 323</td>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>SODOMA</td>
+                <td class="num">83 544 123</td>
+            </tr>
+            <tr>
+                <td>GOMORRA</td>
+                <td class="num">75 345 323</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td class="num"><strong>00000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus porro eum vero dolorum ipsam, mollitia officiis, architecto eaque totam, adipisci magni quibusdam consequatur ut impedit exercitationem? Natus ullam commodi maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia? Hic facilis eius minima labore, ipsum ullam culpa voluptatem pariatur obcaecati adipisci molestiae, vel, quas expedita sunt aut. Mollitia, sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptas mollitia, veniam temporibus assumenda voluptatibus minus veritatis dolore nostrum a saepe repellat aut. Repudiandae aliquid voluptates laboriosam non, possimus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis quas mollitia, eos inventore magni aspernatur magnam commodi ea, fugit tempore! Id asperiores consequuntur reprehenderit corporis eius quaerat magni quia.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus porro eum vero dolorum ipsam, mollitia officiis, architecto eaque totam, adipisci magni quibusdam consequatur ut impedit exercitationem? Natus ullam commodi maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia? Hic facilis eius minima labore, ipsum ullam culpa voluptatem pariatur obcaecati adipisci molestiae, vel, quas expedita sunt aut. Mollitia, sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptas mollitia, veniam temporibus assumenda voluptatibus minus veritatis dolore nostrum a saepe repellat aut. Repudiandae aliquid voluptates laboriosam non, possimus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis quas mollitia, eos inventore magni aspernatur magnam commodi ea, fugit tempore! Id asperiores consequuntur reprehenderit corporis eius quaerat magni quia.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus porro eum vero dolorum ipsam, mollitia officiis, architecto eaque totam, adipisci magni quibusdam consequatur ut impedit exercitationem? Natus ullam commodi maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia? Hic facilis eius minima labore, ipsum ullam culpa voluptatem pariatur obcaecati adipisci molestiae, vel, quas expedita sunt aut. Mollitia, sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptas mollitia, veniam temporibus assumenda voluptatibus minus veritatis dolore nostrum a saepe repellat aut. Repudiandae aliquid voluptates laboriosam non, possimus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis quas mollitia, eos inventore magni aspernatur magnam commodi ea, fugit tempore! Id asperiores consequuntur reprehenderit corporis eius quaerat magni quia.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus porro eum vero dolorum ipsam, mollitia officiis, architecto eaque totam, adipisci magni quibusdam consequatur ut impedit exercitationem? Natus ullam commodi maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia? Hic facilis eius minima labore, ipsum ullam culpa voluptatem pariatur obcaecati adipisci molestiae, vel, quas expedita sunt aut. Mollitia, sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptas mollitia, veniam temporibus assumenda voluptatibus minus veritatis dolore nostrum a saepe repellat aut. Repudiandae aliquid voluptates laboriosam non, possimus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis quas mollitia, eos inventore magni aspernatur magnam commodi ea, fugit tempore! Id asperiores consequuntur reprehenderit corporis eius quaerat magni quia.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus porro eum vero dolorum ipsam, mollitia officiis, architecto eaque totam, adipisci magni quibusdam consequatur ut impedit exercitationem? Natus ullam commodi maxime. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, mollitia? Hic facilis eius minima labore, ipsum ullam culpa voluptatem pariatur obcaecati adipisci molestiae, vel, quas expedita sunt aut. Mollitia, sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptas mollitia, veniam temporibus assumenda voluptatibus minus veritatis dolore nostrum a saepe repellat aut. Repudiandae aliquid voluptates laboriosam non, possimus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis quas mollitia, eos inventore magni aspernatur magnam commodi ea, fugit tempore! Id asperiores consequuntur reprehenderit corporis eius quaerat magni quia.</p>
+</body>
+</html>
