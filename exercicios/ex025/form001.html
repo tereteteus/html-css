@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!--O Action indica para onde vai ser enviado o formulário!-->
+        <p><label for="inome">nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+        <!--O Label irá fazer a ligação entre o item do formulário e seu devido input-->
+        <!--O name e o ID se diferem pelo seu uso, por exemplo, o name é mais utilizado na busca por linguagens como PHP e para a estrutura do HTML, enquanto o ID é mais utilizado em linguagens como o JavaScript
+        
+        O Input não necessariamente precisa de um Name, tornando-se opcional
+        
+        O Method serve para indicar de que forma os dados serão enviados, sendo o GET (PADRÃO) se tratando de dados não sensíveis do usuário (se limitando até 3.000bytes de tamanho, aprox 3.000 letras) e o POST quando se tratar de dados, arquivos e outros materiais sensíveis do usuário, NÃO NECESSARIAMENTE TORNANDO OS DADOS SEGUROS!!!
+        -->
+    </form>
+</body>
+</html>
